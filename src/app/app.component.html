@@ -1,0 +1,4 @@
+<app-header ></app-header>
+<app-todo></app-todo>
+<app-category *ngIf='categoryListPage' (showCategoryList)="showCategoryListPage()"></app-category>
+<router-outlet></router-outlet>

@@ -1,0 +1,8 @@
+<app-list [todos]="tasks" *ngIf="listPage" (addNewToDoButtonClicked)="showNewToDoForm()" 
+(editButtonClicked)="showEditToDoForm()">
+</app-list>
+
+
+<app-newtodo *ngIf="formPage" (addNewToDo)="onToDoAdded($event)"></app-newtodo>
+
+<app-edittodo *ngIf="edittodo" (editToDo)="onEditToDo($event)"></app-edittodo>
